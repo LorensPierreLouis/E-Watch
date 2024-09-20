@@ -1,0 +1,149 @@
+/* Cabecera */
+.cabecera__container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+}
+
+.cabecera__buscar__item{
+    display: none;
+}
+
+/* Menu */
+
+.menu__container{
+    position: fixed;
+    bottom: 0%;
+    height: 75px;
+    width: 100%;
+}
+
+.menu__lista{
+    display: flex;
+    justify-content: space-around;
+    height: 100%;
+}
+
+.menu__lista li {
+    align-self: center;
+}
+
+.menu__itens{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.cabecera__iconos__item_detalles{
+display: flex;
+flex-direction: row;
+gap: 20px;
+}
+
+
+.menu__lista:nth-child(2),
+.menu__lista:nth-child(3),
+.menu__lista:nth-child(4){
+    display: none;
+}
+
+
+/* Seccion superior */
+.superior__seccion__container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    white-space: nowrap;
+    overflow: scroll;
+    gap: 25px;
+}
+
+/*Videos*/
+
+.videos__item{
+    width: 250px;
+    height: 310px;
+    flex-grow: 1;
+    
+}
+
+.videos__container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+
+
+
+
+
+@media (min-width:834px) {
+
+    /* Cabecera */
+    .cabecera__buscar__item{
+        display: block;
+    }
+
+    
+    .menu__container{
+        position: fixed;
+        top: 80px;;
+        left: 0%;
+        height: auto;
+        width: 75px;
+    }
+    .menu__lista{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        gap:30px ;
+      
+    }
+    /* Seccion superior */
+    .superior__seccion__container{
+        gap: 20px;
+        overflow: hidden;
+    }
+
+}
+
+@media (min-width:1200px){
+    .menu__container{
+        width: 170px;
+       
+       
+    }
+
+    
+    .menu__lista:nth-child(2),
+    .menu__lista:nth-child(3),
+    .menu__lista:nth-child(4){
+        display: flex;
+    }
+
+    .menu__lista{
+        height: auto;
+        padding: 20px 10px 20px 10px ;
+      
+    }
+
+    .menu__itens{
+        flex-direction: row;
+        align-items: center;
+        left: 0%;
+    }
+    
+    .superior__seccion__container{
+        left: 180px;
+    }
+
+
+}
+
+
+
+
+
